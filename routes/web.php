@@ -17,6 +17,8 @@ Route::get('/', function () {
 });
 */
 
+Route::get('/hello/{name?}', ['as'=>'hello.index', 'uses'=>'HelloController@index']);
+
 Route::get('home',function(){       //新增view並回傳
     return view('home.index');      //修改載入的頁面路徑
 });
