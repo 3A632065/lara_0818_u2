@@ -11,6 +11,13 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+Route::get('home',function(){       //新增view並回傳
+    return view('home');
+});
+
