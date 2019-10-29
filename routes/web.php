@@ -18,6 +18,6 @@ Route::get('/', function () {
 */
 
 Route::get('home',function(){       //新增view並回傳
-    return view('home');
+    return view('home.index');      //修改載入的頁面路徑
 });
 
